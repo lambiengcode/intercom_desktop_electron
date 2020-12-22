@@ -1,0 +1,169 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-main {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Columns */
+.left-column {
+  height: 100vh;
+  width: 25%;
+  position: relative;
+  border-right: 0.2px solid #ddd;
+  overflow-y: auto;
+}
+
+.center {
+  width: 35%;
+  overflow: hidden !important;
+}
+
+.right-column {
+  width: 40%;
+  overflow: hidden !important;
+}
+#userItem {
+  padding: 10px;
+}
+.circle {
+  margin-top: 8px;
+  height: 60px !important;
+  width: 60px !important;
+}
+h5 {
+  margin-left: 80px;
+}
+p {
+  margin-left: 80px !important;
+  font-size: 14px !important;
+  font-weight: 400;
+}
+.collection .collection-item.avatar {
+  border-right: 0 !important;
+  padding-top: 4px !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+  vertical-align: middle !important;
+}
+.collection .collection-item.avatar p {
+  margin: 0;
+  margin-left: 50px;
+}
+.select-all {
+  margin-top: 24px !important;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  background: white;
+  padding: 0 18px;
+}
+.font-select-all {
+  font-size: 15px;
+  font-weight: 600;
+  color: dodgerblue;
+}
+
+.active {
+  color:lightseagreen;
+}
+
+.unactive {
+  color:gray;
+}
+
+.container-mess {
+  width: 100%;
+  padding: 32px 40px;
+}
+.note {
+  display: flex;
+  margin-left: 20px;
+}
+.input-note {
+  width: 400px;
+}
+.btn-update {
+  margin-left: 30px;
+}
+#canvas {
+  border: 1.5px solid #ddd;
+  width: 360px;
+  height: 270px;
+  margin-left: 25px;
+  background-color: #ddd;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.btn-container {
+  background-color: RoyalBlue;
+  border: none;
+  color: white;
+  padding: 20px;
+  font-size: 16.5px;
+  font-display: block;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 30px;
+}
+
+/* Darker background on mouse-over */
+.btn-container:hover {
+  background-color: DodgerBlue;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  clear: both;
+}
+
+video {
+  background-color: #ddd;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.btn-noti {
+  margin-top: 20px !important;
+  height: 54px;
+  width: 105%;
+  border-radius: 2.5px !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  color: white;
+  border: 0cm;
+  background-color: RoyalBlue;
+}
+
+.btn-noti:hover {
+  background-color: DodgerBlue;
+}
+
+.cb-container {
+  margin-top: 20px !important;
+}
+
+input[type=checkbox] {
+  margin: 4px 0 0;
+  margin-top: 20px !important;
+  padding-top: 20px !important;
+  line-height: normal;
+}

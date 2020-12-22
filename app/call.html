@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/call.css" />
+  </head>
+
+  <body onload="showMyFace()" onended="offCamera()" onunload="offCamera()">
+    <main class="container-main">
+      <!-- Left Column  -->
+      <div class="left-column">
+        <nav class="white">
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field white">
+                <input
+                  id="search"
+                  type="search"
+                  onkeyup="searchUser()"
+                  placeholder="Search..."
+                  autofocus
+                />
+                <label class="label-icon nav-search-item" for="search"
+                  ><i class="large material-icons black-text text-darken-4"
+                    >search</i
+                  ></label
+                >
+                <i class="large material-icons black-text text-darken-4"
+                  >close</i
+                >
+              </div>
+            </form>
+          </div>
+        </nav>
+
+        <ul class="collection" id="myUL"></ul>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <div class="display-container">
+          <video id="yourVideo" class="my-video" autoplay muted></video>
+
+          <video id="friendsVideo" class="friend-video" autoplay></video>
+        </div>
+        <div class="picture-container row">
+          <div class="column" style="width: 340px;"><canvas id="canvas"></canvas></div>
+
+          <div class="column">
+            <div class="image-upload">
+              <label for="file-input">
+                <div class="btn-container"><i class="fa fa-photo"></i></div>
+              </label>
+
+              <input id="file-input" type="file" onchange="readURL(this);" title=""/>
+            </div>
+
+            <button id="capture" class="btn-container"><i class="fa fa-camera"></i></button>
+          </div>
+        </div>
+
+        <button
+          onclick="offCamera()"
+          type="button"
+          class="btn-call"
+          id="ShowButton"
+        >
+          <span class="glyphicon glyphicon-facetime-video" aria-hidden="true">
+          </span
+          >Called
+        </button>
+
+        <p></p>
+      </div>
+    </main>
+    <script src="./js/call.js"></script>
+  </body>
+</html>

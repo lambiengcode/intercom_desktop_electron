@@ -1,0 +1,154 @@
+body {
+  /**/
+  max-width: 100%;
+}
+
+.my-video {
+  background-color: #ddd;
+  border-radius: 4px;
+  margin: 30px 0px 0px 30px;
+  width: 440px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.friend-video {
+  background-color: #ddd;
+  border-radius: 4px;
+  margin: 30px 0px 0px 30px;
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.btn-call {
+  margin: 5px 0px 0px 30px !important;
+  height: 54px;
+  width: 770px;
+  border-radius: 2.5px !important;
+  font-size: 18px !important;
+  font-weight: 500;
+  color: white;
+  border: 0cm;
+  background-color: RoyalBlue;
+}
+
+.btn-call:hover {
+  background-color: DodgerBlue;
+}
+
+.btn-call:after {
+  background-color: DodgerBlue;
+}
+
+.right-column .display-container .main-container {
+  margin-left: 20px;
+}
+
+.right-column .picture-container {
+  justify-content: center;
+  align-items: center;
+  padding-left: 240px;
+}
+
+.right-column .display-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.right-column .button {
+  display: inline-block;
+}
+
+.right-column .btn-display {
+  width: 300px;
+  padding: 8px 0px 8px 0px;
+  margin-left: 34px !important;
+  text-align: center;
+}
+
+.right-column #image_container {
+  width: 240px;
+  height: 220px;
+  background-color: #ddd;
+}
+
+.right-column canvas {
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  width: 320px;
+  height: 240px;
+  overflow: auto;
+}
+
+.container-main {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Columns */
+.left-column {
+  height: 100vh;
+  width: 25%;
+  position: relative;
+  border-right: 0.2px solid #ddd;
+  overflow-y: auto;
+}
+
+.right-column {
+  width: 75%;
+  overflow: hidden !important;
+}
+#userItem {
+  padding: 10px;
+}
+.circle {
+  margin-top: 8px;
+  height: 60px !important;
+  width: 60px !important;
+}
+h5 {
+  margin-left: 90px !important;
+}
+p {
+  margin-left: 90px !important;
+}
+.collection .collection-item.avatar {
+  border-right: 0 !important;
+  padding-top: 4px !important;
+  vertical-align: middle !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.column {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.btn-container {
+  background-color: RoyalBlue;
+  border: none;
+  color: white;
+  padding: 20px;
+  font-size: 16.5px;
+  font-display: block;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn-container:hover {
+  background-color: DodgerBlue;
+}

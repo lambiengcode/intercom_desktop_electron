@@ -1,0 +1,28 @@
+{
+    "name": "Intercom",
+    "version": "1.0.0",
+    "description": "An app calling video and send image !!",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "repository": "",
+    "keywords": [],
+    "author": "WANTED",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^10.1.6"
+    },
+    "dependencies": {
+        "electron-builder": "^22.9.1",
+        "firebase": "^8.0.0",
+        "fs": "0.0.1-security",
+        "jquery": "^3.5.1",
+        "materialize-css": "^1.0.0-rc.2",
+        "path": "^0.12.7",
+        "process": "^0.11.10",
+        "url": "^0.11.0"
+    }
+}

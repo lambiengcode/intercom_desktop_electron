@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    height: 500px;
+}
+
+.circle {
+    height: 60px !important;
+    width: 60px !important;
+
+}
+
+.padding-li {
+    padding-left: 20px !important;
+}
+
+h5 {
+    padding-left: 30px;
+}
+
+p {
+    padding-left: 30px;
+}
+
+.li-user {
+    padding-left: 30px;
+}
+
+.imageSend {
+    width: 150px;
+    height: 110px;
+    margin-right: 10px;
+    border-radius: 0 !important;
+}
+
+.filter-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.txt-filter {
+    font-size: 15px;
+    color: #000;
+}
+
+.input-filter {
+    width: 150px !important;
+}
+
+.from-filter {
+    margin-left: 30px;
+}
+
+.to-filter {
+    margin-left: 30px;
+}
+
+.state-filter {
+    margin-left: 30px;
+}
+
+.pos-state {
+    position: relative;
+    top: 2px;
+}
+.btn-filter{
+    position: relative;
+    left: 80px;
+}
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    left: 60px;
+    bottom: 25px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+
+}
+
+.select-selected {
+    background-color: #ddd;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: #000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}

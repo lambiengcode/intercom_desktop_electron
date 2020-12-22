@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng Ký Thành Viên</h2>
+      <p>Hãy điền đầy đủ thông tin dưới đây.</p>
+      <hr />
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Email" name="email" id="email" required />
+
+      <label for="psw"><b>Mật Khẩu</b></label>
+      <input
+        type="password"
+        placeholder="Mật Khẩu"
+        name="psw"
+        id="psw"
+        required
+      />
+
+      <label for="psw-repeat"><b>Nhập Lại Mật Khẩu</b></label>
+      <input
+        type="password"
+        placeholder="Nhập Lại Mật Khẩu"
+        name="psw-repeat"
+        id="psw-repeat"
+        required
+      />
+
+      <label for="psw-repeat"><b>Số Điện Thoại</b></label>
+      <input
+        type="text"
+        placeholder="Số Điện Thoại"
+        name="phone"
+        id="phone"
+        required
+      />
+
+      <label for="psw-repeat"><b>Phòng</b></label>
+      <input type="text" placeholder="Phòng" name="dept" id="dept" required />
+
+      <hr />
+
+      <button type="submit" class="registerbtn" onclick="register()">
+        Register
+      </button>
+    </div>
+    <script src="./js/register.js"></script>
+  </body>
+</html>

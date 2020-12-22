@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a class="btn active" href="#call"
+        ><i class="fa fa-fw fa-phone"></i> Liên lạc</a
+      >
+      <a href="#notification" class="btn"><i class="fa fa-fw fa-bell"></i> Thông báo</a>
+      <a href="#history" class="btn"><i class="fa fa-fw fa-history"></i> Lịch sử</a>
+      <a href="#statistic" class="btn"><i class="fa fa-fw fa-bar-chart"></i> Thống kê</a>
+      <a href="#signup" class="btn"><i class="fa fa-fw fa-user-plus"></i> Đăng ký</a>
+      <a style="float: right" class="exit" href="#exit" id="closebtn"
+        ><i class="fa fa-fw fa-sign-out"></i> Thoát</a
+      >
+    </div>
+
+    <div class="textContainer">
+      <div id="call">
+        <object
+          type="text/html"
+          data="call.html"
+          width="100%"
+          height="90%"
+        ></object>
+      </div>
+      <div id="notification">
+        <object
+          type="text/html"
+          data="message.html"
+          width="100%"
+          height="90%"
+        ></object>
+      </div>
+      <div id="history">
+        <object
+          type="text/html"
+          data="history.html"
+          width="100%"
+          height="90%"
+        ></object>
+      </div>
+      <div id="statistic"></div>
+
+      <div id="signup">
+        <object
+          type="text/html"
+          data="register.html"
+          width="100%"
+          height="90%"
+        ></object>
+      </div>
+    </div>
+
+    <script>
+      var closebtn = document.getElementById("closebtn");
+      var header = document.getElementById("myTopnav");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+      closebtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.closeCurrentWindow();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./css/history.css">
+</head>
+
+<body>
+
+    <div class="filter-container">
+        <div class="from-filter">
+            <label class="txt-filter" for="start">Từ Ngày: </label>
+
+            <input class="input-filter" type="date" id="start" value="2020-10-29">
+        </div>
+        <div class="to-filter">
+            <label class="txt-filter" for="end">Đến Ngày: </label>
+
+            <input class="input-filter" type="date" id="end">
+        </div>
+        <div class="state-filter">
+            <label class="txt-filter pos-state" for="state" style="margin-right: 40px;">State: </label>
+            <div class="custom-select" style="width:200px;">
+                <select class="select-state" id="filterByState">
+                    <option value="">All</option>
+                    <option value="all">All</option>
+                    <option value="accept">Accept</option>
+                    <option value="reject">Reject</option>
+                    <option value="missing">Missing</option>
+                    <option value="rejected">Rejected Call</option>
+                </select>
+            </div>
+        </div>
+        <a href="#" class="btn btn-display btn-filter" onclick="getFilter()">Lọc</a>
+    </div>
+    <ul class="collection" id="myUL">
+    </ul>
+
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+    <script src="./js/history.js"></script>
+</body>
+
+</html>
