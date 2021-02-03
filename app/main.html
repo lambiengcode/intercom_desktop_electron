@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a class="btn active" href="#call"
+      <a class="btn active" href="#call" id="initial-page"
         ><i class="fa fa-fw fa-phone"></i> Liên lạc</a
       >
       <a href="#notification" class="btn"><i class="fa fa-fw fa-bell"></i> Thông báo</a>
@@ -59,6 +59,7 @@
     </div>
 
     <script>
+      window.location=document.getElementById('initial-page').href;
       var closebtn = document.getElementById("closebtn");
       var header = document.getElementById("myTopnav");
       var btns = header.getElementsByClassName("btn");
