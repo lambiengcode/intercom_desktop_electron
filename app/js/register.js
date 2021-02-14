@@ -32,7 +32,7 @@ async function register() {
       .auth()
       .createUserWithEmailAndPassword(email, psw)
       .then(async (user) => {
-        const res = await db.collection("users").add({
+        const res = await db.collection("users").doc(user.user.uid).set({
           id: user.user.uid,
           email: email,
           dept: dept,

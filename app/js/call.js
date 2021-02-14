@@ -46,7 +46,7 @@ const listenChange = db
 
 const getUser = db
   .collection("users")
-  .where("id", "!=", "FnAWubAdtFgYwGIML23oRAtp5u93")
+  .where("id", "!=", "6mQ06EQZhpay2JFSS2N9N9LCvBj1")
   .get()
   .then((snapshot) => {
     snapshot.docs.forEach((doc) => {
@@ -119,7 +119,7 @@ async function addDataToFirestore(data) {
     .then((snapshot) => snapshot.ref.getDownloadURL())
     .then(async (url) => {
       const res = await db.collection("requests").add({
-        idSend: "FnAWubAdtFgYwGIML23oRAtp5u93",
+        idSend: "6mQ06EQZhpay2JFSS2N9N9LCvBj1",
         receiveID: idUser,
         completed: false,
         request: true,
