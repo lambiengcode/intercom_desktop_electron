@@ -1,14 +1,3 @@
-var config = {
-  apiKey: "AIzaSyB9-0fSDE7L9161oTksup63Ugy4vHUfMb4",
-  authDomain: "project-message-65c25.firebaseapp.com",
-  databaseURL: "https://project-message-65c25.firebaseio.com",
-  projectId: "project-message-65c25",
-  storageBucket: "project-message-65c25.appspot.com",
-  messagingSenderId: "1037020081116",
-  appId: "1:1037020081116:web:e25f32a41574d37b93fd19",
-  measurementId: "G-94K8JYMM5E",
-};
-
 firebase.initializeApp(config);
 const db = firebase.firestore();
 
